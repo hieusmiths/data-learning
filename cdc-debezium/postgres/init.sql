@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS balance (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100),
+  balance INTEGER
+);

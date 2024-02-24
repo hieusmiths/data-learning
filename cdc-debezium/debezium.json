@@ -1,0 +1,19 @@
+{
+  "name": "sample-connector",
+  "config": {
+    "name": "sample-connector",
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "plugin.name": "pgoutput",
+    "database.server.name" : "postgres",
+    "database.hostname": "postgres",
+    "database.port": "5432",
+    "database.user": "admin",
+    "database.password": "admin",
+    "database.dbname": "exampledb",
+    "table.include.list": "public.balance",
+    "topic.creation.enable": "true",
+    "topic.prefix": "postgres",
+    "topic.creation.default.replication.factor": "1",
+    "topic.creation.default.partitions": "1"
+  }
+}
